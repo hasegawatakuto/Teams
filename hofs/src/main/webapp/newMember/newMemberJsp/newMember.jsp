@@ -5,14 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
-<title>ログイン画面</title>
+<meta charset="UTF-8">
+<title>新規会員登録</title>
 </head>
 <body>
-<h1>ログイン</h1>
-<!-- ユーザーID,password入力 -->
+<h1>新規会員登録</h1>
 MailAddless:<input type="text" name="loginId" required><br>
 PassWord:<input type="password" name="pass" required><br>
 <input type="submit" value="ログイン"><br>
-<a href="">新規会員登録はこちら</a>
+<a href="">ログイン画面へ</a>
 </body>
 </html>
