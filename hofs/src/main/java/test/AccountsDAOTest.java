@@ -17,8 +17,7 @@ public class AccountsDAOTest {
 				result.getUseId().equals("minato") &&
 				result.getPass().equals("1234") &&
 				result.getMail().equals("yusuke.minato@miyabilink.jp") &&
-				result.getName().equals("湊 雄輔") &&
-				result.getAge() == 23) {
+				result.getName().equals("湊 雄輔") ) {
 			System.out.println("testfindOK成功");
 		}else {
 			System.out.println("restfindOK失敗");

@@ -37,7 +37,7 @@ public class Loginservlet extends HttpServlet {
 		Login login = new Login(mail, pass);
 		LoginLogic bo = new LoginLogic();
 		boolean result = bo.execute(login);
-		
+		System.out.println();
 		//ログイン処理の可否によって処理を分岐
 		if (result) {
 			//セクションスコープにメールを保存
