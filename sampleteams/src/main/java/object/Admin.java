@@ -1,10 +1,13 @@
 package object;
 
+import java.sql.Date;
+
 public class Admin {
 
 	private int id;
 	private String name;
 	private String password;
+	private Date at;
 	private boolean login_flag;
 
 	public int getId() {
@@ -29,6 +32,14 @@ public class Admin {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Date getAt() {
+		return at;
+	}
+
+	public void setAt(Date at) {
+		this.at = at;
 	}
 
 	public boolean isLogin_flag() {

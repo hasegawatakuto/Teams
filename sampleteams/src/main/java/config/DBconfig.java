@@ -14,10 +14,9 @@ public class DBconfig {
 
 		// プロパティファイルのフルパスを指定
 		String db_properties_file = "/Applications/Eclipse_2022-12.app/Contents/workspace/sampleteams/DBconfig.properties";
-
 		Properties db_info = new Properties();
 		FileInputStream db_file_stream = new FileInputStream(db_properties_file);
-
+		
 		try {
 			// プロパティファイルを読み込む
 			db_info.load(db_file_stream);

@@ -7,7 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import config.DBconfig;
 import object.Admin;
 
 public class Login {
@@ -15,10 +14,10 @@ public class Login {
 	public Admin check(String email, String password) throws FileNotFoundException {
 
 		// データベースへの接続情報をプロパティファイルから取得
-		DBconfig db_info = new DBconfig();
-		String url = db_info.getDBinfo().get("url");
-		String user = db_info.getDBinfo().get("user");
-		String pass = db_info.getDBinfo().get("password");
+		//DBconfig db_info = new DBconfig();
+		String url = "jdbc:postgresql://localhost:5432/hofs";//db_info.getDBinfo().get("url");
+		String user = "postgres";//db_info.getDBinfo().get("user");
+		String pass = "takuto1206";//db_info.getDBinfo().get("password");
 
 		// 実行SQL
 		String login_sql = "select * from users "
@@ -31,7 +30,6 @@ public class Login {
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e1) {
-			// TODO 自動生成された catch ブロック
 			e1.printStackTrace();
 		}
 		try(Connection conn = DriverManager.getConnection(url,user,pass)) {
@@ -57,7 +55,7 @@ public class Login {
 				admin.setLogin_flag(false);
 				System.out.println("格納失敗");
 			}
-			
+
 		} catch (SQLException e) {
 			System.out.println("データベースとの接続を閉じます");
 			e.printStackTrace();

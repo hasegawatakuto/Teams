@@ -6,13 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-<link rel="stylesheet" href="../css/top.css">
+<link rel="stylesheet" href="/sampleteams/css/customer_list.css">
 <title>トップ画面</title>
 </head>
 <body>
 	<!-- ここからヘッダー -->
 	<header>
-		<img id="logo" src="#" alt="drivelineロゴ">
+		<img id="logo" src="./public/drivelinelogo.ico" alt="drivelineロゴ">
 		<p id="logoright">JavaTeamDevelopment</p>
 	</header>
 	<!-- ここからメイン -->
