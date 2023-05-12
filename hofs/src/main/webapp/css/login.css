@@ -1,0 +1,16 @@
+@charset "UTF-8";
+body{
+	background-color: lightgray;
+}
+header{
+	background-color: gray;
+}
+/*ここからヘッダー*/
+#logoright{
+	text-align: right;
+    font-weight: 600;
+}
+/*ここからメイン*/
+main{
+	text-align: center;
+}

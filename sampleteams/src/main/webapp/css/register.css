@@ -1,0 +1,30 @@
+@charset "UTF-8";
+main{
+	text-align: center;
+}
+body{
+	background-color: lightgray;
+}
+header{
+	background-color: gray;
+}
+/*ここからヘッダー*/
+#logoRight{
+	text-align: right;
+    font-weight: 600;
+    height: 70px;
+}
+#logo{
+	text-align: left;
+	width: 100px;
+	height: auto;
+}
+/*ここからメイン*/
+mx-auto{ width: 300px;
+}
+mb-3{ text-align: center;
+}
+input.form-control{
+	width: 100%;
+	margin: auto;
+}
